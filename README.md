@@ -54,7 +54,6 @@ Bu projede UI testleri aşağıdaki yaklaşımla yazılmıştır:
 Login Ekranı:  
 <img src="assets/screenshots/login.png.jpg" alt="Login Ekranı" width="400" />
  
-Test Başarılı Ekranı:  
-![Test Başarılı Ekranı](assets/screenshots/test-pass.png)
+![Test Başarılı Ekranı](assets/screenshots/tests-pass.png.png)
 
 
