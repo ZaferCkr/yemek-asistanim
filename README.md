@@ -47,5 +47,7 @@ Bu projede UI testleri aşağıdaki yaklaşımla yazılmıştır:
 
 ## Ekran Görüntüleri
 
+## Ekran Görüntüleri
+
 Login Ekranı:  
-![Login Ekranı](assets/screenshots/login.png.jpg)
+<img src="assets/screenshots/login.png.jpg" alt="Login Ekranı" width="400" />
