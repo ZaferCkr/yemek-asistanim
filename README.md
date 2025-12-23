@@ -46,4 +46,4 @@ Bu projede UI testleri aşağıdaki yaklaşımla yazılmıştır:
 ✅ **Firebase authentication fonksiyonları test ortamında mock’landı**  
 
 Ekran Görüntüleri:
-login.png assets/screenshots/login.png
+login.png.jpg assets/screenshots/login.png
