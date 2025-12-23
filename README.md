@@ -1,17 +1,63 @@
+# 🍽️ Yemek Asistanım
 
-Herkese merhaba,
-Temiz kod prensiplerine ve kullanıcı deneyimine odaklanarak, React Native ve Expo altyapısıyla geliştirdiğim yeni portföy projemi tamamlamanın heyecanını yaşıyorum.
+**Yemek Asistanım**, kullanıcıya hızlıca yemek fikirleri sunan, tarif öneren ve yemek planlamayı kolaylaştırmayı hedefleyen bir mobil uygulamadır. Temiz kod prensipleri, modüler yapı ve kullanıcı dostu arayüz ile geliştirilmiştir. :contentReference[oaicite:1]{index=1}
 
-📌 Projenin Amacı
- “Yemek Asistanım”, kullanıcıya hızlıca yemek fikirleri sunan, tarif öneren ve yemek planlamayı kolaylaştırmayı hedefleyen bir mobil uygulama.
- 
-🛠️ Teknoloji Tarafı
- Uygulama, React Native – Expo yapısıyla geliştirildi.
- Basit, anlaşılır ve modüler bir kod yapısı oluşturmaya odaklandım.
- Arayüz, kullanıcıların rahat bir deneyim yaşaması için minimalist şekilde tasarlandı.
- 
-✨ Bu Projeyle Ne Öğrendim?
-Mobil projelerde bileşen yönetimi
-State yapılarının esnek kullanımı
-Expo’da proje yapısının doğru organize edilmesi
-UI/UX tarafında kullanıcı akışını sade tutma
+---
+
+## 🚀 Özellikler
+
+- 📱 **React Native (Expo)** ile mobil uygulama geliştirme  
+- 📍 **Expo Router** ile dosya tabanlı yönlendirme  
+- 🔐 **Firebase Authentication & Firestore** ile kullanıcı yönetimi  
+- 🧪 **Jest + Testing Library** ile UI birim testleri  
+- 📌 Kullanıcı adı veya email ile giriş/giriş yapabilme  
+- 💡 Kayıt olma sırasında kullanıcı adı benzersizliği kontrolü
+
+---
+
+## 📦 Teknolojiler
+
+| Teknoloji | Kullanım |
+|-----------|----------|
+| **React Native (Expo)** | Mobil uygulama geliştirme |
+| **Expo Router** | Sayfa yönlendirme ve navigation |
+| **Firebase Auth & Firestore** | Kullanıcı kimlik doğrulama & veri saklama |
+| **TypeScript** | Güvenli tip kontrolü |
+| **Jest + @testing-library/react-native** | Birim testler |
+
+---
+
+## 🧠 Proje Detayları
+
+- Login / Kayıt ekranları  
+- Kullanıcı bilgilerini Firebase’de saklama  
+- Expo Router ile ekranlar arası geçiş  
+- Test altyapısı ile UI elementlerin render doğrulanması  
+- Kod yapısı sade, okunabilir ve genişletilebilir
+
+---
+
+## 🧪 Testler
+
+Bu projede UI testleri aşağıdaki yaklaşımla yazılmıştır:
+
+✅ **Login ekranı render ediliyor**  
+✅ **Expo Router kullanımı mock’landı**  
+✅ **Firebase authentication fonksiyonları test ortamında mock’landı**  
+
+Örnek test:
+```tsx
+import { render } from '@testing-library/react-native';
+import LoginScreen from '../app/login';
+
+// Mock setup
+jest.mock('expo-router', () => ({
+  useRouter: () => ({ replace: jest.fn() }),
+}));
+
+// ...firebase mock’ları burada
+
+test('Login ekranı render ediliyor', () => {
+  const { getByText } = render(<LoginScreen />);
+  expect(getByText('Giriş Yap 🍕')).toBeTruthy();
+});
