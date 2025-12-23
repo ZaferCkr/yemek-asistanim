@@ -45,19 +45,15 @@ Bu projede UI testleri aşağıdaki yaklaşımla yazılmıştır:
 ✅ **Expo Router kullanımı mock’landı**  
 ✅ **Firebase authentication fonksiyonları test ortamında mock’landı**  
 
-Örnek test:
-```tsx
-import { render } from '@testing-library/react-native';
-import LoginScreen from '../app/login';
+## Ekran Görüntüleri
 
-// Mock setup
-jest.mock('expo-router', () => ({
-  useRouter: () => ({ replace: jest.fn() }),
-}));
+## Ekran Görüntüleri
 
-// ...firebase mock’ları burada
+## Ekran Görüntüleri
 
-test('Login ekranı render ediliyor', () => {
-  const { getByText } = render(<LoginScreen />);
-  expect(getByText('Giriş Yap 🍕')).toBeTruthy();
-});
+Login Ekranı:  
+<img src="assets/screenshots/login.png.jpg" alt="Login Ekranı" width="400" />
+
+Test Başarılı Ekranı:  
+<img src="assets/screenshots/test-pass.png" alt="Test Başarılı Ekranı" width="400" />
+
