@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# 🍽️ Yemek Asistanım
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Yemek Asistanım**, kullanıcıya hızlıca yemek fikirleri sunan, tarif öneren ve yemek planlamayı kolaylaştırmayı hedefleyen bir mobil uygulamadır. Temiz kod prensipleri, modüler yapı ve kullanıcı dostu arayüz ile geliştirilmiştir. :contentReference[oaicite:1]{index=1}
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Özellikler
 
-   ```bash
-   npm install
-   ```
+- 📱 **React Native (Expo)** ile mobil uygulama geliştirme  
+- 📍 **Expo Router** ile dosya tabanlı yönlendirme  
+- 🔐 **Firebase Authentication & Firestore** ile kullanıcı yönetimi  
+- 🧪 **Jest + Testing Library** ile UI birim testleri  
+- 📌 Kullanıcı adı veya email ile giriş/giriş yapabilme  
+- 💡 Kayıt olma sırasında kullanıcı adı benzersizliği kontrolü
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📦 Teknolojiler
 
-In the output, you'll find options to open the app in a
+| Teknoloji | Kullanım |
+|-----------|----------|
+| **React Native (Expo)** | Mobil uygulama geliştirme |
+| **Expo Router** | Sayfa yönlendirme ve navigation |
+| **Firebase Auth & Firestore** | Kullanıcı kimlik doğrulama & veri saklama |
+| **TypeScript** | Güvenli tip kontrolü |
+| **Jest + @testing-library/react-native** | Birim testler |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🧠 Proje Detayları
 
-## Get a fresh project
+- Login / Kayıt ekranları  
+- Kullanıcı bilgilerini Firebase’de saklama  
+- Expo Router ile ekranlar arası geçiş  
+- Test altyapısı ile UI elementlerin render doğrulanması  
+- Kod yapısı sade, okunabilir ve genişletilebilir
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🧪 Testler
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Bu projede UI testleri aşağıdaki yaklaşımla yazılmıştır:
 
-## Learn more
+✅ **Login ekranı render ediliyor**  
+✅ **Expo Router kullanımı mock’landı**  
+✅ **Firebase authentication fonksiyonları test ortamında mock’landı**  
 
-To learn more about developing your project with Expo, look at the following resources:
+Örnek test:
+```tsx
+import { render } from '@testing-library/react-native';
+import LoginScreen from '../app/login';
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+// Mock setup
+jest.mock('expo-router', () => ({
+  useRouter: () => ({ replace: jest.fn() }),
+}));
 
-## Join the community
+// ...firebase mock’ları burada
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+test('Login ekranı render ediliyor', () => {
+  const { getByText } = render(<LoginScreen />);
+  expect(getByText('Giriş Yap 🍕')).toBeTruthy();
+});
