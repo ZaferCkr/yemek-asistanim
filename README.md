@@ -45,5 +45,7 @@ Bu projede UI testleri aşağıdaki yaklaşımla yazılmıştır:
 ✅ **Expo Router kullanımı mock’landı**  
 ✅ **Firebase authentication fonksiyonları test ortamında mock’landı**  
 
-Ekran Görüntüleri:
-login.png.jpg assets/screenshots/login.png
+## Ekran Görüntüleri
+
+Login Ekranı:  
+![Login Ekranı](assets/screenshots/login.png.jpg)
