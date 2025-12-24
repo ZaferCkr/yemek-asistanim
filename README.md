@@ -17,14 +17,13 @@ Proje; temiz kod prensipleri, modüler mimari ve kullanıcı dostu arayüz yakla
 
 💡 Kayıt sırasında kullanıcı adı benzersizliği kontrolü
 
-📦 Kullanılan Teknolojiler
-Teknoloji	Kullanım Amacı
-React Native (Expo)	Mobil uygulama geliştirme
-Expo Router	Sayfa yönlendirme ve navigation
-Firebase Auth & Firestore	Kimlik doğrulama ve veri saklama
-TypeScript	Tip güvenliği
-Jest + @testing-library/react-native	UI birim testleri
-🧠 Proje Detayları
+| Teknoloji | Kullanım Amacı |
+|----------|----------------|
+| React Native (Expo) | Mobil uygulama geliştirme |
+| Expo Router | Sayfa yönlendirme ve navigation |
+| Firebase Auth & Firestore | Kimlik doğrulama ve veri saklama |
+| TypeScript | Tip güvenliği |
+| Jest + @testing-library/react-native | UI birim testleri |
 
 Login ve Kayıt (Register) ekranları
 
