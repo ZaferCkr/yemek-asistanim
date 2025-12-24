@@ -71,5 +71,5 @@ Login Ekranı:
 <img src="assets/screenshots/login.png.jpg" alt="Login Ekranı" width="400" />
  
 ![Test Başarılı Ekranı](assets/screenshots/tests-pass.png.png)
-
+ ![Test Başarılı Ekranı](assets/screenshots/Test.png.PNG)
 
