@@ -40,6 +40,7 @@ Okunabilir, sürdürülebilir ve genişletilebilir kod yapısı
 
 🧪 Testler
 
+
 Bu projede gerçek kullanıcı senaryoları baz alınarak UI testleri yazılmıştır.
 
 Test Edilen Senaryolar
