@@ -192,7 +192,7 @@ export default function LoginScreen() {
 
           <TouchableOpacity style={styles.button} onPress={islemYap}>
             {yukleniyor ? (
-              <ActivityIndicator color="#fff" />
+              <ActivityIndicator color="#fff" testID="loading-indicator" />
             ) : (
               <Text style={styles.buttonText}>
                 {kayitModu ? 'Kayıt Ol' : 'Giriş Yap'}
