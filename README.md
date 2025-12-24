@@ -29,9 +29,13 @@ Proje; temiz kod prensipleri, modüler mimari ve kullanıcı dostu arayüz yakla
 Login ve Kayıt (Register) ekranları
 
 Kullanıcı bilgilerinin Firebase üzerinde saklanması
+
 Expo Router ile ekranlar arası geçiş
+
 Test altyapısı ile UI bileşenlerinin doğrulanması
+
 Okunabilir, sürdürülebilir ve genişletilebilir kod yapısı
+
 
 
 🧪 Testler
